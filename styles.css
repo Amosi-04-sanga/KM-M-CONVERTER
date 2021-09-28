@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.converter {
+  width: 70%;
+  margin: 3rem auto;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: .7rem;
+}
+
+.converter__heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.converter__inputs {
+  padding: 1rem;
+  background-color: #f1e3c9;
+}
+
+.converter__kilometers, .converter__meters {
+  display: block;
+  width: 80%;
+  margin: 2rem auto;
+  border: none;
+  outline: none;
+  border-radius: .2rem;
+  padding: .3rem;
+}
+
+.converter__kilometers::-webkit-input-placeholder, .converter__meters::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.converter__kilometers:-ms-input-placeholder, .converter__meters:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.converter__kilometers::-ms-input-placeholder, .converter__meters::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.converter__kilometers::placeholder, .converter__meters::placeholder {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=styles.css.map */
