@@ -2,6 +2,8 @@
 const kilometers = document.getElementById("kilometers")
 const meters = document.getElementById("meters")
 
+
+// EVENT LISTNERS
 kilometers.addEventListener( "focus", () => {
     emptyValue(kilometers)
 } )
@@ -9,14 +11,17 @@ meters.addEventListener( "focus", () => {
     emptyValue(meters)
 } )
 
+kilometers.addEventListener( "input", kilometersToMeters )
+meters.addEventListener( "input", metersToKilometers )
+
+
+// FUNCTIONS
 function emptyValue(el) {
    el.value = ""
 }
 
 const possibleError = "invalid number"
 
-kilometers.addEventListener( "input", kilometersToMeters )
-meters.addEventListener( "input", metersToKilometers )
 
 function kilometersToMeters() {
     // return if input is NOT absolute value
